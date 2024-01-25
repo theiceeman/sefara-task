@@ -1,8 +1,4 @@
 const rootDirectory = {};
-/*
-delete the dir
-then append dest to dir then call create 
- */
 
 class FileDirectory {
 
@@ -53,33 +49,7 @@ class FileDirectory {
     }
 }
 
-async function main() {
-    await new FileDirectory().create('fruits');
-    await new FileDirectory().create('grains');
-    await new FileDirectory().create('vegetables');
-    await new FileDirectory().create('fruits/apples');
-    await new FileDirectory().create('fruits/apples/fuji');
-    // console.log(JSON.stringify(rootDirectory, null, 2))
+let fileDirectory = new FileDirectory();
 
 
-    // await new FileDirectory().create('grains/squash');
-    // await new FileDirectory().move('grains/squash', 'vegetables');
-    // await new FileDirectory().create('foods');
-    // await new FileDirectory().move('grains', 'foods');
-    // await new FileDirectory().move('fruits', 'foods');
-    // await new FileDirectory().move('vegetables', 'foods');
-
-
-    // await new FileDirectory().delete('osimhen');
-    // console.log(JSON.stringify(res, null, 2))
-
-
-    // await new FileDirectory().move('red/white/blue','john');
-    // console.log(JSON.stringify(rootDirectory, null, 2))
-
-
-
-
-    console.log(JSON.stringify(rootDirectory, null, 2))
-}
-main()
+module.exports = fileDirectory

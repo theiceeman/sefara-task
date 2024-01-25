@@ -1,0 +1,11 @@
+{
+  "name": "sunfi-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/theiceeman/sefara-task",
+  "author": "okorieebube <okorieebube1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": " node ./__tests__/Unit.test.js"
+  }
+}
